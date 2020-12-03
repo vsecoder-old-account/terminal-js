@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Terminal</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div id="root">
+  <div id="app" style="background-color: rgb(51, 52, 68);">
+    <div id="terminal" style="box-shadow: rgb(17, 17, 17) 0px 2px 5px;">
+      <div id="window" style="background-color: rgb(34, 35, 69); color: rgb(244, 244, 244);">
+        <button class="btn red" id="close"></button>
+        <button class="btn yellow"></button>
+        <button class="btn green" id="full"></button>
+        <span id="title" style="color: rgb(244, 244, 244);">Terminal</span>
+      </div>
+      <div id="field" class="dark" tabindex="0" style="background-color: rgb(34, 35, 51); color: rgb(244, 244, 244); font-weight: normal;">
+        <div>
+          <div id="query">Admin ~ </div>
+          <span id="command"></span>
+          <div id="cursor" style="animation: 1.02s step-end 0s infinite normal none running blink-dark;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script  src="./key.js"></script>
+<script  src="./script.js"></script>
+</body>
+</html>
